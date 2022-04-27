@@ -189,15 +189,15 @@ document.getElementById("btnNumber3").onclick = function() {
  */
 document.getElementById("btnNumber4").onclick = function() {
 
-    var tenSv1 = document.getElementById("tenSv1").value * 1;
+    var tenSv1 = document.getElementById("tenSv1").value;
     var x_1 = parseInt(document.getElementById("x_1").value * 1);
     var y_1 = parseInt(document.getElementById("y_1").value * 1);
 
-    var tenSv2 = document.getElementById("tenSv2").value * 1;
+    var tenSv2 = document.getElementById("tenSv2").value;
     var y_2 = parseInt(document.getElementById("y_2").value * 1);
     var x_2 = parseInt(document.getElementById("x_2").value * 1);
 
-    var tenSv3 = document.getElementById("tenSv3").value * 1;
+    var tenSv3 = document.getElementById("tenSv3").value;
     var x_3 = parseInt(document.getElementById("x_3").value * 1);
     var y_3 = parseInt(document.getElementById("y_3").value * 1);
 
@@ -208,14 +208,11 @@ document.getElementById("btnNumber4").onclick = function() {
     toaDo3 = Math.sqrt(Math.pow((x_4 - x_3), 2) + Math.pow((y_4 - y_3), 2));
 
     if (toaDo1 >= toaDo2 && toaDo1 >= toaDo3) {
-        ketQua = "Sinh viên " + tenSv1 + " xa trường nhất với đoạn đường " + toaDo1.toFixed(2)
-        "m";
+        ketQua = "Sinh viên: " + tenSv1 + " xa trường nhất với đoạn đường " + toaDo1.toFixed(3) + "m";
     } else if (toaDo2 >= toaDo1 && toaDo2 >= toaDo3) {
-        ketQua = "Sinh viên " + tenSv2 + " xa trường nhất với đoạn đường " + toaDo2.toFixed(2)
-        "m";
+        ketQua = "Sinh viên: " + tenSv2 + " xa trường nhất với đoạn đường " + toaDo2.toFixed(3) + "m";
     } else if (toaDo3 >= toaDo1 && toaDo3 >= toaDo2) {
-        ketQua = "Sinh viên " + tenSv3 + " xa trường nhất với đoạn đường " + toaDo3.toFixed(2)
-        "m";
+        ketQua = "Sinh viên: " + tenSv3 + " xa trường nhất với đoạn đường " + toaDo3.toFixed(3) + "m";
     }
     document.getElementById("txtKetQua_4").innerHTML = ketQua;
 }
